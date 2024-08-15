@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    will-change: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+.cl{
+    font-size: 40px;
+   position: relative;
+
+
+    -webkit-text-stroke: 0.5px red;
+}
+.cl::before{
+    top: 0;
+  content: "CREATIVE";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+  color: rgb(0, 252, 155);
+    border-right: 3px solid forestgreen;
+    -webkit-text-stroke: 0px red;
+   overflow: hidden;
+    animation: animate 6s linear;
+}
+@keyframes animate {
+    0%{
+
+        width: 0%;
+      
+    }
+    100%{
+        width: 100%;
+       
+    }
+}
